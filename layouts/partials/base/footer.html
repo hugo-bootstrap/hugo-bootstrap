@@ -1,9 +1,18 @@
 <footer class="footer">
     <div class="container">
-      <p class="text-muted">
-        <p>
-          © Copyright <a href="/#">M2 Tech Lab</a>· All Rights Reserved·
-        </p>
-      </p>
+    <div class="row">
+        {{ partial "footer-extra" . }}
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="margin-10">
+                {{ partial "bloc/footer/nav" . }}
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <small>
+              {{ partial "bloc/footer/credits" . }}
+          </small>
+        </div>
+     </div>
     </div>
 </footer>

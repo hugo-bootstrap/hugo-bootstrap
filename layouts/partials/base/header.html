@@ -13,9 +13,9 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-            <li><a href="{{ .Site.BaseURL }}/page/about/">About</a></li>
-            <li><a href="{{ .Site.BaseURL }}/page/resume/">Resume</a></li>
-            <li><a href="{{ .Site.BaseURL }}/post/">Blog</a></li>
+            <li><a href="{{ "/page/about/" | absURL }}">About</a></li>
+            <li><a href="{{ "/page/resume/"| absURL }}">Resume</a></li>
+            <li><a href="{{ "/post/"| absURL }}">Blog</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
