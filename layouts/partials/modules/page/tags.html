@@ -1,0 +1,4 @@
+<i class="fa fa-tag"></i>
+{{ range .Params.tags }}
+<a href="{{ "/tags/" | absURL }}{{ . | urlize }}" class="label label-primary">{{ . }}</a>
+{{ end }}

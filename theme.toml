@@ -1,0 +1,17 @@
+name = "Hugo Bootstrap"
+license = "MIT"
+licenselink = "https://github.com/mmrath/hugo-bootstrap/LICENSE.md"
+description = "An elegant open source and mobile first theme, extended with new integrations and layout improvements"
+homepage = "https://github.com/mmrath/hugo-bootstrap"
+tags = ["blog", "technical", "personal"]
+features = ["blog", "technical", "personal"]
+min_version = 0.14
+
+[author]
+    name = "Murali Rath"
+    homepage = "http://mmrath.com"
+
+[original]
+    author =  "Steven Enten"
+    homepage = "https://github.com/enten/hyde-y"
+    repo = "https://github.com/enten/hyde-y"
