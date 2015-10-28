@@ -1,12 +1,10 @@
 <footer class="footer">
-    <div class="container">
+    <div class="container hidden-print">
     <div class="row">
         {{ partial "footer-extra" . }}
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="margin-10">
-                {{ partial "bloc/footer/nav" . }}
-          </div>
+           {{ partial "bloc/footer/nav" . }}
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
           <small>
