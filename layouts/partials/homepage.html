@@ -1,8 +1,10 @@
   <div class="container">
+    {{ if isset .Site.Params "showBlogHeader" }}
     <header>
       {{ partial "bloc/content/h1-title" . }}
       {{ partial "bloc/content/lastupdate" . }}
     </header>
+    {{ end }}
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
     {{ range $paginator.Pages }}
       {{ .Render "summary" }}
