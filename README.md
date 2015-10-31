@@ -8,8 +8,7 @@ Feel free to make changes and open pull requests.*
 
 <small>Forked from [Hyde-Y](https://github.com/enten/hyde-y)</small>
 
-You can find a live site using this theme [here](http://enten.github.io/hugo-boilerplate/)
-and the corresponding source code [here](https://github.com/enten/hugo-boilerplate).
+You can find a live site using this theme [here](http://mmrath.com/).
 
 ## Screenshot
 
