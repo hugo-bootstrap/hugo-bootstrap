@@ -97,6 +97,9 @@ disqusShortname = "your_disqus_shortname"
     topline = "few words about your site"
     footline = "code with <i class='fa fa-heart'></i>"
 
+    # Show a sidebar menu
+    showRightSidebar = true
+
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Home".
     home = "home"

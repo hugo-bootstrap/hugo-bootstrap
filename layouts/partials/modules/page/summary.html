@@ -1,6 +1,6 @@
 {{ if .IsPage }}
   {{ if .Description }}
-    {{ .Description }}
+    {{ .Description | markdownify }}
   {{ else }}
     {{ .Summary }}
   {{ end }}
