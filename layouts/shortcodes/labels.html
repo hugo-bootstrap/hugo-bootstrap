@@ -1,1 +1,3 @@
-{{ partial "modules/page/labels" .Params }}
+{{ range . }}
+<span class="tag tag-primary">{{ . }}</span>
+{{ end }}
