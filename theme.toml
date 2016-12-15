@@ -1,12 +1,12 @@
-name = "Hugo Bootstrap4"
+name = "Hugo Bootstrap"
 license = "MIT"
 licenselink = "https://github.com/mmrath/hugo-bootstrap4/LICENSE.md"
-description = "A hugo theme using bootstrap 4, bootswatch, font-awesome, highlight.js"
-homepage = "https://github.com/mmrath/hugo-bootstrap4"
-tags = ["blog", "technical", "personal"]
-features = ["blog", "technical", "personal"]
-min_version = 0.14
+description = "A hugo theme using bootstrap 4, font-awesome, highlight.js"
+homepage = "https://github.com/mmrath/hugo-bootstrap"
+tags = ["blog", "technical", "personal", "bootstrap"]
+features = ["blog", "technical", "personal", "bootstrap"]
+min_version = 0.17
 
 [author]
-    name = "Murali Rath"
+    name = "Murali Mohan Rath"
     homepage = "http://mmrath.com"
