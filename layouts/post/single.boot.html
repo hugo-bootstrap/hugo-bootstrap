@@ -1,4 +1,43 @@
 <footer>
-  {{ partial "bloc/content/navigation" . }}
-  {{ partial "bloc/content/comments" . }}
+    <!--navigation-->
+    {{ if .IsPage }}
+      {{ if or ( .NextInSection ) ( .PrevInSection ) }}
+        <nav><ul class="pagination">
+        {{ if .PrevInSection }}
+            <li class="page-item">
+              <a href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }} " class="page-link">
+                <span aria-hidden="true">&larr;</span>{{ .Site.Data.Strings.previous }}
+              </a>
+            </li>
+        {{end}}
+
+        {{ if .NextInSection }}
+          <li class="page-item">
+            <a href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}" class="page-link">
+                {{ .Site.Data.Strings.next }} <span aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+        {{end}}
+        </ul> </nav>
+      {{ end }}
+    {{ end }}
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    {{ with .Site.DisqusShortname }}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      (function() {
+        // Don't ever inject Disqus on localhost--it creates unwanted
+        // discussions from 'localhost:1313' on your Disqus account...
+        if (window.location.hostname == "localhost")
+          return;
+
+        var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+        dsq.src = '//{{ . }}.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {{ end }}
+  </div>
 </footer>

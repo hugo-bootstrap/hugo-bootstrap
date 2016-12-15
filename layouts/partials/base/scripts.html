@@ -1,25 +1,15 @@
-<script src="{{ "/js/jquery.min.js" | absURL }}"></script>
-<script src="{{ "/js/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "/assets/js/jquery.min.js" | absURL }}"></script>
+<script src="{{ "/assets/js/tether.min.js" | absURL }}"></script>
+<script src="{{ "/assets/js/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "/assets/js/highlight.pack.js" | absURL }}"></script>
 
+<script>hljs.initHighlightingOnLoad();</script>
 
 {{ with .Site.DisqusShortname }}
-<script type="text/javascript">
-  (function() {
-    // Don't ever inject Disqus on localhost--it creates unwanted
-    // discussions from 'localhost:1313' on your Disqus account...
-    if (window.location.hostname == "localhost")
-      return;
-
-    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
-    dsq.src = '//{{ . }}.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
+<script id="dsq-count-scr" src="//{{ . }}.disqus.com/count.js" async></script>
 {{ end }}
 
-<script src="{{ "/js/highlight.pack.js" | absURL }}"></script>
-<script src="{{ "/js/site.js" | absURL }}"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script src="{{ "/assets/js/script.js" | absURL }}"></script>
 
 {{ with .Site.Params.googleAnalytics }}
 <script>

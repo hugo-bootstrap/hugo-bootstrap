@@ -1,0 +1,31 @@
+<div class="card card-block">
+  <h4 class="card-title">RECENTS</h4>
+  <div class="card-text">
+    <div class="widget">
+      <ul id="recent-post">
+        {{ range first 5 (where .Site.Pages "Type" "post") }}
+        <li>
+          <div class="item-thumbnail bg-inverse">
+              <a href="{{ .Permalink }}" class="thumbnail">
+              {{ if isset .Params "banner" }}
+                  {{if or (in (substr .Params.banner 0 7) "http://") (in (substr .Params.banner 0 8) "https://")}}
+                  <span style="background-image:url({{ .Params.banner }})"
+                    alt="{{ .Title }}" class="thumbnail-image"></span>
+                  {{ else }}
+                  <span style="background-image:url({{ $.Site.BaseURL }}{{ .Params.banner }})"
+                    alt="{{ .Title }}" class="thumbnail-image"></span>
+                  {{end}}
+              {{else}}
+                  <span class="thumbnail-image thumbnail-none"></span>
+              {{ end }}
+              </a>
+          </div>
+            <div class="item-inner">
+              <p class="item-title"><a href="{{ .Permalink }}" class="title">{{ .Title }}</a></p>
+            </div>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
