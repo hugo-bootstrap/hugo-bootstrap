@@ -6,10 +6,10 @@
   {{ partial "base/metas" . }}
 
 
-  <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | absURL }}">
-  <link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | absURL }}">
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | absURL }}">
-  <link rel="stylesheet" href="{{ "/assets/css/tomorrow-night.css" | absURL }}">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/style.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/tomorrow-night.css">
   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 </head>
 <body class="bg-faded">

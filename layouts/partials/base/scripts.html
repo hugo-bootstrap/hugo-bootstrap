@@ -1,7 +1,7 @@
-<script src="{{ "/assets/js/jquery.min.js" | absURL }}"></script>
-<script src="{{ "/assets/js/tether.min.js" | absURL }}"></script>
-<script src="{{ "/assets/js/bootstrap.min.js" | absURL }}"></script>
-<script src="{{ "/assets/js/highlight.pack.js" | absURL }}"></script>
+<script src="{{ .Site.BaseURL }}assets/js/jquery.min.js"></script>
+<script src="{{ .Site.BaseURL }}assets/js/tether.min.js"></script>
+<script src="{{ .Site.BaseURL }}assets/js/bootstrap.min.js"></script>
+<script src="{{ .Site.BaseURL }}assets/js/highlight.pack.js"></script>
 
 <script>hljs.initHighlightingOnLoad();</script>
 
@@ -9,7 +9,7 @@
 <script id="dsq-count-scr" src="//{{ . }}.disqus.com/count.js" async></script>
 {{ end }}
 
-<script src="{{ "/assets/js/script.js" | absURL }}"></script>
+<script src="{{ .Site.BaseURL }}assets/js/script.js"></script>
 
 {{ with .Site.Params.googleAnalytics }}
 <script>
