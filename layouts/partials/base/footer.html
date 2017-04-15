@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xs-12 col-md-9">
         <p class="text-xs-center m-a-0 p-a-0">
-          &copy; {{.Now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}
+          &copy; {{now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}
         </p>
         <p class="text-xs-center  m-a-0 p-a-0">
           {{ $footerMenuLen := len .Site.Menus.footer}} {{ if gt $footerMenuLen 0 }} {{ range $k, $v := .Site.Menus.footer }}
