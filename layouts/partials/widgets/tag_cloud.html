@@ -5,7 +5,7 @@
   <h4 class="card-title">TAG CLOUD</h4>
   <p class="card-text">
     {{ range $name, $items := .Site.Taxonomies.tags }}
-        <a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower  }}/" class="badge badge-primary">
+        <a href="/tags/{{ $name | urlize | lower  }}/" class="badge badge-primary">
         {{ $name }}
         </a>
     {{ end }}
