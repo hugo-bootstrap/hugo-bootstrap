@@ -5,7 +5,7 @@
       <ul id="recent-post">
         {{ range first 5 (where .Site.RegularPages "Type" "post") }}
         <li>
-          <div class="item-thumbnail bg-inverse">
+          <div class="item-thumbnail bg-dark">
               <a href="{{ .Permalink }}" class="thumbnail">
               {{ if isset .Params "banner" }}
                   {{if or (in (substr .Params.banner 0 7) "http://") (in (substr .Params.banner 0 8) "https://")}}

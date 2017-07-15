@@ -5,12 +5,13 @@
   <title>{{ .Title }} {{ if ne .Title .Site.Title }} &middot; {{ .Site.Title }}{{ end }}</title>
   {{ partial "base/metas" . }}
 
-
   <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/style.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/tomorrow-night.css">
-  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.10.8/umd/popper.js"></script>
+
 </head>
-<body class="bg-faded">
+<body class="bg-light">
     {{ partial "base/header" . }}
