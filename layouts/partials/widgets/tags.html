@@ -9,7 +9,7 @@
       <ul>
         {{ range $name, $items := .Site.Taxonomies.tags }}
           <li>
-            <a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower  }}/">{{ $name }}</a>
+            <a href="{{ (print "tags/" ($name | urlize | lower) "/") | relURL }}">{{ $name }}</a>
             <span class="category-list-count">{{ len $items }}</span>
           </li>
         {{ end }}
