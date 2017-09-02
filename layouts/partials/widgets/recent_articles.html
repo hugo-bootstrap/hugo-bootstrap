@@ -13,7 +13,7 @@
                   <span style="background-image:url({{ .Params.banner }})"
                     alt="{{ .Title | markdownify }}" class="thumbnail-image"></span>
                   {{ else }}
-                  <span style="background-image:url({{ $.Site.BaseURL }}{{ .Params.banner }})"
+                  <span style="background-image:url({{ .Params.banner | relURL }})"
                     alt="{{ .Title | markdownify }}" class="thumbnail-image"></span>
                   {{end}}
               {{else}}
