@@ -1,10 +1,11 @@
-<footer class="footer hidden-print">
+<footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-9">
         <p class="text-xs-center m-a-0 p-a-0">
           &copy; {{now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}
         </p>
+        {{ if .Site.Menus.footer }}
         <p class="text-xs-center  m-a-0 p-a-0">
           {{ $footerMenuLen := len .Site.Menus.footer}} {{ if gt $footerMenuLen 0 }} {{ range $k, $v := .Site.Menus.footer }}
           <span class="p-l-1 p-r-1">
@@ -12,7 +13,7 @@
               </span>
               {{ if lt $k (sub $footerMenuLen 1) }}&middot;{{ end }} {{ end }} {{ end }}
         </p>
-
+        {{ end }}
       </div>
     </div>
   </div>
