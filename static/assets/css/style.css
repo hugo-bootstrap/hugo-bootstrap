@@ -1,20 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,100);
 
 body {
-  font-family: "Roboto", "Open Sans", "Sans Serif", "Georgia", "Times New Roman", Times, serif;
   /* Margin bottom by footer height */
   margin-bottom: 100px;
-  line-height: 1.6;
-  font-weight: 300;
 }
 html {
   position: relative;
   min-height: 100%;
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer {
