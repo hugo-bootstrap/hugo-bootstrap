@@ -1,21 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300');
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 100px;
-}
 html {
   position: relative;
   min-height: 100%;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;  
+  padding-top: 4rem;
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+  padding-bottom: 2rem;
+}
+
+/*Sticky footer*/
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 100px;
-  font-size: 0.8em;
-  padding-top: 2em;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;  
+  font-size: 0.8rem;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.site-navbar div ul li {
+  line-height: 1;
+  margin-left: 1em;
+  padding-left: 1em;
+  font-size: 0.9rem;
+}
+
+
+
+
+.post-meta {
+  margin-bottom: 1rem;
+  display: table;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+
+.post-meta-item {
+  margin-right: 10px;
+  float: left;
+}
+
+.post-meta-item > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .blog-masthead {
@@ -24,56 +71,31 @@ html {
   -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0, 0, 0, .1);
   box-shadow: inset 0 -.1rem .25rem rgba(0, 0, 0, .1);
 }
+
 .navbar-light .navbar-nav .nav-link {
   padding: 0.5rem;
   color: rgba(0, 0, 0, 0.9);
 }
+
 .blog-header {
   margin-bottom: 1rem;
-  background-color: #fff !important;
 }
-h1.post-title {
-  text-decoration: none;
-  margin-top: 0.75em;
-  margin-bottom: 0px;
-}
+
 h1.post-title a{
   text-decoration: none;
 }
-.post-meta {
-  margin-bottom: 1rem;
-  display: table;
-  font-size: 0.8rem;
-  color: rgba(0, 0, 0, 0.6);
-  text-transform: uppercase;
-  ;
-}
-.post-meta-item {
-  margin-right: 10px;
-  float: left;
-}
-.post-meta-item > a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.6);
-}
+
 .post-more-link {
   margin-top: 0px;
 }
 
-pre code {
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-}
-
 /* Responsive video? */
-
-iframe {
-  max-width: 100%;
-}
 .sidebar > .card {
   -webkit-box-shadow: inset 0 0 0 0px rgba(0, 0, 0, .125);
   box-shadow: inset 0 0 0 0px rgba(0, 0, 0, .125);
   background-color: inherit;
   border: 0px;
+  padding-bottom: 1.5rem;
 }
 .sidebar > .card-block {
   padding-left: 0px;
@@ -214,11 +236,7 @@ iframe {
   opacity: 0.8;
 }
 
-.post-container {
-  background-color: #fff;
-  margin-bottom: 1rem;
-  padding-top: 1rem;
-}
+
 
 img.post-thumbnail{
     vertical-align: middle;
