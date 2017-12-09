@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;  
+  font-family: 'Open Sans', sans-serif;
   padding-top: 4rem;
   /* Margin bottom by footer height */
   margin-bottom: 100px;
@@ -43,8 +43,25 @@ iframe {
   font-size: 0.9rem;
 }
 
+blockquote, q {
+  quotes: none;
+}
 
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
 
+blockquote {
+  display: block;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #666;
+  padding: 5px 0 5px 15px;
+  border-left: 5px solid #17a2b8;
+}
 
 .post-meta {
   margin-bottom: 1rem;
