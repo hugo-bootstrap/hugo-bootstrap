@@ -43,24 +43,25 @@ iframe {
   font-size: 0.9rem;
 }
 
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
 blockquote {
-  display: block;
+  position: relative;
+  font-family: Georgia, "Times New Roman", "Microsoft Yahei", serif;
   font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
   font-style: italic;
-  color: #666;
-  padding: 5px 0 5px 15px;
-  border-left: 5px solid #17a2b8;
+  padding: 10px 20px 10px 54px;
+  background: #e6e6e6;
+  border-left: 4px solid #eee;
+}
+blockquote:before {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  content: "\f10d";
+  color: #4d4d4d;
+  font-size: 32px;
+  font-family: FontAwesome;
+  text-align: center;
 }
 
 .post-meta {
