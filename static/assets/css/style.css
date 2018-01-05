@@ -162,3 +162,29 @@ section {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
 }
+
+.share-icon {
+  position: relative;
+}
+.comment-count {
+  position: absolute;
+  background-color:#00ab6b;
+  opacity: 0.8;
+  color: black;
+  top: -3px;
+  left: 22px;
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 60%;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .5rem;
+}
+
+.comment-count a {
+  text-decoration: none;
+  font-weight: 700;
+  color:rgba(256, 256, 256, 0.9);;
+}

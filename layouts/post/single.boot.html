@@ -25,7 +25,7 @@
   {{ end }}
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="pt-4">
+      <div class="pt-4" id="comment-section">
         {{ if ne .Site.DisqusShortname "" }} {{ template "_internal/disqus.html" . }} {{ end }}
       </div>
     </div>
