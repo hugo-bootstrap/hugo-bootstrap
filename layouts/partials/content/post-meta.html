@@ -1,10 +1,6 @@
 <div class="post-meta">
   <div class="post-meta-item">
     <time datetime="{{ .Date.Format "01 Jan 2016" }}">{{ .Date.Format .Site.Data.Formats.date }}</time>
-
-    {{ with .Params.author }}
-      &middot; {{ $.Site.Data.Strings.byauthor }} {{ . }}
-    {{ end }}
     &middot; {{ .ReadingTime }} {{ .Site.Data.Strings.metaReadinMinutes }}
     &middot; {{ .WordCount }} {{ .Site.Data.Strings.words }}
   </div>
