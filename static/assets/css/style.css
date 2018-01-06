@@ -69,29 +69,31 @@ section {
 	margin-bottom:-1px;
 }
 
-.card-columns .card {
-	margin-bottom:20px;
-}
-
-.listrecent h2.card-title {
+.post-card h2.card-title {
 	font-size:1.3rem;
 	font-weight:700;
 	line-height: 1.25;
 }
-.listrecent h2.card-title a {
+.post-card h2.card-title a {
 	color:rgba(0,0,0,.8);
 }
-.listrecent h2.card-title a:hover {
+.post-card h2.card-title a:hover {
 	color:rgba(0,0,0,.6);
 	text-decoration:none;
 }
-.listrecent h4.card-text {
+.post-card h4.card-text {
 	color:rgba(0,0,0,.44);
 	font-size:0.95rem;
 	line-height:1.4;
 	font-weight:400;
 }
 
+.post-card .card-footer{
+  background-color: #fff;
+  border: 0px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
 .card {
 	border-radius:4px;
@@ -101,12 +103,7 @@ section {
 	border-top-left-radius:4px;
 }
 
-.recent-post-card .card-footer{
-  background-color: #fff;
-  border: 0px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
+
 
 
 .share {

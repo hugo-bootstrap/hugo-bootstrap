@@ -1,13 +1,17 @@
 {{ partial "head" . }}
-<div class="container post-container">
-  <header>
-    {{ partial "content/h1-title" . }}
-  </header>
-  <ul class="container">
-    {{ range $index, .Paginator.Pages }}
-      <li>{{ partial "content/title-link" . }}</li>
-    {{ end }}
-  </ul>
-  {{ partial "content/pagination.html" . }}
+
+<div class="container">
+    <section>
+        <div class="section-title">
+            <h2><span>{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</span></h2>
+        </div>
+        <div class="row px-2">
+          {{ range $index, .Paginator.Pages }}
+            {{ partial "post/card" . }}
+          {{ end }}
+          <!-- begin post -->
+        </div>
+    </section>
 </div>
+
 {{ partial "foot" . }}
