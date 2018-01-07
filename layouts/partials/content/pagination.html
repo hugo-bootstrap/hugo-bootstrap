@@ -3,11 +3,7 @@
     <ul class="pagination">
       {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
           {{ if .Paginator.HasPrev }}
-            <li class="page-item">
-              <a class="page-link" rel="prev" href="{{ .Paginator.Prev.URL | relURL }}">
-                  « Previous
-              </a>
-            </li>
+          {{ range .Paginator.Prev }} {{ partial "post/card" . }} {{ end }}
           {{ end }}
           {{ if .Paginator.HasNext }}
             <li class="page-item">

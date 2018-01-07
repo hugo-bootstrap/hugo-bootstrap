@@ -46,7 +46,8 @@ a {
 }
 
 a,a:hover {
-	transition:all 0.2s;
+  transition:all 0.2s;
+  text-decoration: none;
 }
 
 section {
@@ -193,7 +194,8 @@ blockquote {
   border-left: 10px solid #ccc;
   padding: 1rem 1rem;
   quotes: "\201C""\201D""\2018""\2019";
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
 }
 
 blockquote p {
@@ -201,47 +203,14 @@ blockquote p {
 }
 
 blockquote p cite {
-  color: #999999;
+  color: rgba(0, 0, 0, 0.7);;
   font-size: 1rem;
   display: block;
   margin-top: 5px;
+  font-style: normal;
 }
    
 blockquote p cite:before {
   content: "\2014 \2009";
 }
 
-/*
-blockquote {
-  font-family: Georgia, serif;
-  font-size: 18px;
-  font-style: italic;
-  width: 500px;
-  margin: 0.25em 0;
-  padding: 0.25em 40px;
-  line-height: 1.45;
-  position: relative;
-  color: #383838;
-}
-
-blockquote:before {
-  display: block;
-  content: "\201C";
-  font-size: 80px;
-  position: absolute;
-  left: -20px;
-  top: -20px;
-  color: #7a7a7a;
-}
-
-blockquote cite {
-    color: #999999;
-    font-size: 14px;
-    display: block;
-    margin-top: 5px;
-}
-     
-blockquote cite:before {
-    content: "\2014 \2009";
-  }
-*/
