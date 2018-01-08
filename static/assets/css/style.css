@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300');
 html {
   position: relative;
@@ -11,6 +11,13 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 100px;
   padding-bottom: 2rem;
+  color: rgba(0,0,0,.84);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga" on;
+  -moz-font-feature-settings: "liga" on;
+
 }
 
 /*Sticky footer*/
@@ -24,7 +31,6 @@ body {
 
 .article-body {
   font-size: 1.25rem;
-  font-weight: 300;
   padding-top: 1rem;
 }
 .highlight pre {
@@ -32,6 +38,9 @@ body {
 }
 
 
+.article-body h1, h2,h3,h4,h5,h6 {
+  font-weight: 600;
+}
 .article-body h2{
   margin-top: 3.5rem;
 }
@@ -46,9 +55,8 @@ body {
   font-size: 1.3rem;
 }
 
-
 p code {
-  padding: 0px;
+  background-color: rgba(0,0,0,0.05);
 }
 pre code {
   font-size: 1rem;
