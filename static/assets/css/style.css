@@ -31,6 +31,22 @@ body {
   padding: 0.5rem;
 }
 
+
+.article-body h2{
+  margin-top: 3.5rem;
+}
+
+.article-body h3{
+  margin-top: 2.0rem;
+  font-size: 1.5rem;
+}
+
+.article-body h4{
+  margin-top: 1.3rem;
+  font-size: 1.3rem;
+}
+
+
 p code {
   padding: 0px;
 }
