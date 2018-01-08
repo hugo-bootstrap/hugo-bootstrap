@@ -3,7 +3,7 @@
   {{ if or ( .NextInSection ) ( .PrevInSection ) }}
 
     <section>
-        <div class="section-title pt-4">
+        <div class="section-title">
             <h2>
                 <span>You might also like</span>
             </h2>
@@ -12,7 +12,7 @@
           {{ if .PrevInSection }}
             {{ partial "post/card" .PrevInSection }} 
           {{ end }} 
-          {{ partial "content/related-posts" .}}
+          {{ partial "content/related-posts" . }}
           {{ if .NextInSection }}
             {{ partial "post/card" .NextInSection }} 
           {{ end }}

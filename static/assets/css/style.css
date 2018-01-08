@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300');
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  padding-top:5rem;
-  font-family: 'Quicksand', sans-serif;
+  padding-top: 5rem;
+  font-family: 'Roboto', sans-serif;
   /* Margin bottom by footer height */
   margin-bottom: 100px;
   padding-bottom: 2rem;
@@ -24,6 +24,8 @@ body {
 
 .article-body {
   font-size: 1.25rem;
+  font-weight: 300;
+  padding-top: 1rem;
 }
 .highlight pre {
   padding: 0.5rem;
@@ -35,6 +37,7 @@ p code {
 pre code {
   font-size: 1rem;
   font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
 }
 
 .card.no-border {
@@ -71,9 +74,9 @@ section {
 }
 
 .post-card h2.card-title {
-	font-size:1.3rem;
+	font-size:1.2rem;
 	font-weight:700;
-	line-height: 1.25;
+	line-height: 1.2;
 }
 .post-card h2.card-title a {
 	color:rgba(0,0,0,.8);
@@ -83,18 +86,19 @@ section {
 	text-decoration:none;
 }
 .post-card h4.card-text {
-	color:rgba(0,0,0,.44);
-	font-size:0.95rem;
+  font-size:1rem;
 	line-height:1.4;
-	font-weight:400;
+	font-weight:300;
 }
 
 .post-card .card-footer{
   background-color: #fff;
   border: 0px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
+.post-card .card-footer small.text-muted {
+  font-weight: 300;
+}
+
 
 .card {
 	border-radius:4px;
@@ -146,13 +150,15 @@ section {
 .post-meta {
   margin-bottom: 1rem;
   display: table;
-  font-size: 0.8rem;
+  font-size: 0.9  rem;
   color: rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
 }
 
 .post-meta-item {
   margin-right: 10px;
+  font-size: 0.9rem;
+  font-weight: 300;
   float: left;
 }
 

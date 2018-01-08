@@ -1,18 +1,3 @@
 {{ if gt $.Paginator.TotalPages 1 }}
-<div class="row ">
-    <ul class="pagination">
-      {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-          {{ if .Paginator.HasPrev }}
-          {{ range .Paginator.Prev }} {{ partial "post/card" . }} {{ end }}
-          {{ end }}
-          {{ if .Paginator.HasNext }}
-            <li class="page-item">
-              <a class="page-link" rel="next" href="{{ .Paginator.Next.URL | relURL }}">
-                  Next »
-              </a>
-            </li>
-          {{ end }}
-      {{ end }}
-    </ul>
-</div>
+
 {{ end }}
