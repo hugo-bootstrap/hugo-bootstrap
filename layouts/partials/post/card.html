@@ -14,10 +14,10 @@
         {{ end }}
 
     <div class="card-body">
-      <h2 class="card-title">
+      <p class="card-title">
           <a href="{{ .Permalink }}">{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</a>
-      </h2>
-      <h4 class="card-text">
+      </p>
+      <p class="card-text">
           {{ if .IsPage }}
           {{ if .Description }}
             {{ .Description | markdownify | truncate 140 }}
