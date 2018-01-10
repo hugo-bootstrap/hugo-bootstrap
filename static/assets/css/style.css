@@ -40,34 +40,43 @@ body {
   padding: 0.5rem;
 }
 
-h1.post-title {
-  font-weight: 600;
-}
-
+h1.post-title,
 .article-body h1,
 h2,
 h3,
-h4,h5,h6 {
+h4,
+h5,
+h6 {
   font-weight: 600;
 }
 
+h1.post-title {
+  font-size: 2.5rem;
+}
+
+.article-body h1 {
+  font-size: 2.5rem;
+  margin-top: 3.5rem;
+}
+
 .article-body h2 {
-  margin-top: 3.0rem;
+  font-size: 1.875rem;
+  margin-top: 2.8rem;
 }
 
 .article-body h3 {
+  font-size: 1.459rem;
   margin-top: 2rem;
-  font-size: 1.7rem;
 }
 
 .article-body h4 {
-  margin-top: 1.4rem;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .article-body h5 {
-  margin-top: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-top: 1rem 0
 }
 
 p code {
