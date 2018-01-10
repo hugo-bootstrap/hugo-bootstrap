@@ -33,7 +33,6 @@ body {
 .article-body {
   font-size: 1.25rem;
   padding-top: 1rem;
-  text-align: justify;
   padding-bottom: 3rem;
 }
 
@@ -49,7 +48,6 @@ h1.post-title {
 h2,
 h3,
 h4,h5,h6 {
-  text-align: left;
   font-weight: 600;
 }
 
