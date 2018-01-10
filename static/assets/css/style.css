@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 html {
   position: relative;
   min-height: 100%;
@@ -31,7 +31,7 @@ body {
 }
 
 .article-body {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   padding-top: 1rem;
   text-align: justify;
   padding-bottom: 3rem;
@@ -48,7 +48,8 @@ h1.post-title {
 .article-body h1,
 h2,
 h3,
-h4 {
+h4,h5,h6 {
+  text-align: left;
   font-weight: 600;
 }
 
@@ -58,12 +59,12 @@ h4 {
 
 .article-body h3 {
   margin-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .article-body h4 {
-  margin-top: 1.25rem;
-  font-size: 1.25rem;
+  margin-top: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .article-body h5 {
@@ -72,12 +73,12 @@ h4 {
 }
 
 p code {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 pre code {
-  font-size: 1rem;
-  font-family: 'Source Code Pro', monospace;
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .card.no-border {
@@ -101,15 +102,15 @@ section {
 .section-title {
   border-bottom: 1px solid rgba(0, 0, 0, .15);
   margin-bottom: 25px;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 27px;
 }
 
 .section-title span {
-  border-bottom: 1px solid rgba(0, 0, 0, .44);
+  border-bottom: 1px solid rgba(0, 0, 0, .25);
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   margin-bottom: -1px;
 }
 
