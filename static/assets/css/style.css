@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 html {
   position: relative;
   min-height: 100%;
@@ -7,7 +7,7 @@ html {
 
 body {
   padding-top: 5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   /* Margin bottom by footer height */
   margin-bottom: 100px;
   padding-bottom: 2rem;
@@ -79,13 +79,17 @@ h1.post-title {
   margin-top: 1rem 0
 }
 
+.article-body p {
+  margin-top: 0.75rem;
+}
+
 p code {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
 pre code {
   font-size: 1.2rem;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Inconsolata', monospace;
 }
 
 .card.no-border {
