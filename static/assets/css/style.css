@@ -6,12 +6,12 @@ html {
 }
 
 body {
-  padding-top: 5rem;
   font-family: 'Nunito Sans', sans-serif;
   /* Margin bottom by footer height */
   margin-bottom: 100px;
   padding-bottom: 2rem;
   color: rgba(0, 0, 0, .84);
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,9 +19,10 @@ body {
   -moz-font-feature-settings: "liga" on;
 }
 
-
+.site-navbar {
+  margin-bottom: 2rem;
+}
 /*Sticky footer*/
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -31,7 +32,7 @@ body {
 }
 
 .article-body {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
@@ -127,8 +128,8 @@ section {
 
 .post-card p.card-title {
   font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.2;
+  font-size: 1.459rem;
+  line-height: 1;
 }
 
 .post-card p.card-title a {
@@ -142,7 +143,6 @@ section {
 
 .post-card div.card-body,
 .card-footer {
-  padding: 0.75rem;
   background-color: #fff;
   border: 0px;
 }
