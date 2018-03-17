@@ -8,7 +8,7 @@ html {
 body {
   font-family: 'Nunito Sans', sans-serif;
   /* Margin bottom by footer height */
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   padding-bottom: 2rem;
   color: rgba(0, 0, 0, .84);
   font-weight: 400;
@@ -28,7 +28,7 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 100px;
+  height: 60px;
 }
 
 .article-body {
@@ -81,7 +81,7 @@ h1.post-title {
 }
 
 .article-body p {
-  margin-top: 0.75rem;
+  margin-top: 0.75  rem;
 }
 
 p code {
