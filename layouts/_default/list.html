@@ -6,7 +6,7 @@
             <span>{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</span>
         </div>
         <div class="row px-2">
-          {{ range $index, .Paginator.Pages }}
+          {{ range .Paginator.Pages }}
             {{ partial "post/card" . }}
           {{ end }}
           <!-- begin post -->
