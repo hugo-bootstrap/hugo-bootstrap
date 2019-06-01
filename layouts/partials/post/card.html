@@ -1,0 +1,37 @@
+<div class="col-xs-12 col-md-6 col-lg-4 pb-3 px-2 align-self-stretch d-flex align-items-stretch">
+    <div class="card mx-0 post-card">
+
+      {{ if and (isset .Params "thumbnail") (not (eq .Params.thumbnail "")) }}
+        <a href="{{ .Permalink }}" itemprop="url">
+            {{if or (in (substr .Params.thumbnail 0 7) "http://") (in (substr .Params.thumbnail 0 8) "https://")}}
+              <img src="{{ .Params.thumbnail }}" class="card-img-top">
+            {{ else if  (in (substr .Params.thumbnail 0 1) "/" ) }}
+              <img src="{{ .Params.thumbnail | relURL }}" class="card-img-top">
+            {{ else }}
+              <img src="{{ .Permalink }}{{ .Params.thumbnail }}" class="card-img-top">
+            {{end}}
+        </a>
+        {{ end }}
+
+    <div class="card-body">
+      <p class="card-title">
+          <a href="{{ .Permalink }}">{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</a>
+      </p>
+      <p class="card-text">
+          {{ if .IsPage }}
+          {{ if .Description }}
+            {{ .Description | markdownify | truncate 140 }}
+          {{ else }}
+            {{ .Summary | truncate 140}}
+          {{ end }}
+        {{ end }}
+      </h4>
+    </div>
+    <div class="card-footer recentpost">
+        <small class="text-muted">
+            <time datetime="{{ .Date.Format "22 July 2017" }}">{{ .Date.Format .Site.Data.Formats.date }}</time>
+          &middot;&nbsp;{{ .ReadingTime }} {{ .Site.Data.Strings.metaReadinMinutes }}
+        </small>
+    </div>  
+  </div>
+</div>

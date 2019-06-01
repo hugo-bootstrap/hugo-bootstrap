@@ -1,11 +1,6 @@
 <div class="post-meta">
   <div class="post-meta-item">
-    <i class="fa fa-calendar"></i>
-    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format .Site.Data.Formats.date }}</time>
-
-    {{ with .Params.author }}
-      &middot; {{ $.Site.Data.Strings.byauthor }} {{ . }}
-    {{ end }}
+    <time datetime="{{ .Date.Format "01 Jan 2016" }}">{{ .Date.Format .Site.Data.Formats.date }}</time>
     &middot; {{ .ReadingTime }} {{ .Site.Data.Strings.metaReadinMinutes }}
     &middot; {{ .WordCount }} {{ .Site.Data.Strings.words }}
   </div>
@@ -35,13 +30,5 @@
         </div>
       {{ end }}
   {{ end }}
-  {{ if not (eq .Site.DisqusShortname "") }}
-  <div class="post-meta-item">
-    &nbsp;<i class="fa fa-comment-o"></i>
-    <a href="{{ .Permalink }}#disqus_thread" class="article-comment-link">
-         Comments
-    </a>
-  </div>
-  {{end}}
 
 </div>

@@ -1,12 +1,12 @@
 <footer class="footer text-white {{ .Site.Params.navbarBgColorClass | default .Site.Data.Defaults.navbarBgColorClass }}">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-9">
-        <p class="text-xs-center m-a-0 p-a-0">
+      <div class="offset-lg-1 col-lg-10 col-xs-12">
+        <p class="text-center mb-0 pa-0">
           &copy; {{now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}
         </p>
         {{ if .Site.Menus.footer }}
-        <p class="text-xs-center  m-a-0 p-a-0">
+        <p class="text-center mb-0 pa-0">
           {{ $footerMenuLen := len .Site.Menus.footer}} {{ if gt $footerMenuLen 0 }} {{ range $k, $v := .Site.Menus.footer }}
           <span class="p-l-1 p-r-1">
                 <a href="{{.URL}}" class="text-capitalize no-decoration text-white">{{ .Name }}</a>

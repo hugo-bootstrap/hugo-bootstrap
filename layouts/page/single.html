@@ -1,12 +1,15 @@
+
+
+
 {{ partial "head" . }}
-<div class="container p-b-2">
+<div class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-9 post-container">
+    
+    
+    <!-- End Fixed Left Share -->
+    <div class="offset-lg-1 col-lg-10 col-xs-12">
       {{ .Render "single.content" }}
     </div>
-      <div class="col-xs-12 col-md-3">
-        {{ partial "content/sidebar" .}}
-      </div>
   </div>
 </div>
 {{ partial "foot" . }}
