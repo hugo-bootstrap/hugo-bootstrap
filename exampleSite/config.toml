@@ -29,7 +29,7 @@ googleAnalytics = "UA-XXXXXXX-1"
     pre = "<i class='fa fa-info-circle'></i>"
     weight = -90
     identifier = "about-me"
-    url = "/page/about-me"
+    url = "/about"
 
 [[menu.footer]]
     name = "DISCLAIMER"
