@@ -1,17 +1,9 @@
 {{ partial "head" . }}
 
 <div class="container">
-    <section>
-        <div class="section-title">
-            <span>{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</span>
-        </div>
-        <div class="row px-2">
-          {{ range .Paginator.Pages }}
-            {{ partial "post/card" . }}
-          {{ end }}
-          <!-- begin post -->
-        </div>
-    </section>
+  <div class="row">
+    {{ partial "content/related-posts" . }}
+  </div>
 </div>
 
 {{ partial "foot" . }}

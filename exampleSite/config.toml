@@ -1,4 +1,4 @@
-baseurl = "http://themes.gohugo.io/theme/bootstrap/"
+baseurl = "https://example.com"
 languageCode = "en-us"
 title = "Hugo Themes"
 author = "Steve Francia"

@@ -1,15 +1,10 @@
-<div class="container">
-    <section>
+    <div class="col-sm-12">
         <div class="section-title">
-            <span>Posts</span>
+            <span>Recent Posts</span>
         </div>
-        <div class="row px-2">
-            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-                {{ range $paginator.Pages.ByDate.Reverse }}
-                    {{ partial "post/card" . }}
-                {{ end }}
-            {{ partial "content/pagination" . }}
-            <!-- begin post -->
-        </div>
-    </section>
-</div>
+    </div>
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ range $paginator.Pages.ByDate.Reverse }}
+            {{ partial "post/card" . }}
+        {{ end }}
+    {{ partial "content/pagination" . }}

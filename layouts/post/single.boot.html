@@ -1,27 +1,12 @@
   <!--navigation-->
   {{ if .IsPage }} 
   {{ if or ( .NextInSection ) ( .PrevInSection ) }}
-
-    <section>
-        <div class="section-title">
-                <span>You might also like</span>
-        </div>
-        <div class="row px-2">
-          {{ if .PrevInSection }}
-            {{ partial "post/card" .PrevInSection }} 
-          {{ end }} 
+          
           {{ partial "content/related-posts" . }}
-          {{ if .NextInSection }}
-            {{ partial "post/card" .NextInSection }} 
-          {{ end }}
-        </div>
-    </section>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="col-sm-12 col-sm-12 col-md-12 col-lg-12">
         <div class="pt-4" id="comment-section">
           {{ if ne .Site.DisqusShortname "" }} {{ template "_internal/disqus.html" . }} {{ end }}
         </div>
       </div>
-    </div>
   {{ end }} 
   {{ end }}
