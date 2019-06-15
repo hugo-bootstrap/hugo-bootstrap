@@ -31,20 +31,17 @@ googleAnalytics = "UA-XXXXXXX-1"
     identifier = "about-me"
     url = "/about"
 
-[[menu.footer]]
-    name = "DISCLAIMER"
-    weight = -110
-    identifier = "disclaimer"
-    url = "/page/disclaimer/"
 
-[[menu.footer]]
-    name = "LICENSE"
-    weight = -120
-    identifier = "license"
-    url = "/page/license/"
-
-[params.widgets]
-  recent_articles = true
-  categories = true
-  tags = true
-  tag_cloud = true
+# You can have link at the footer as below
+# [[menu.footer]]
+#     name = "DISCLAIMER"
+#     weight = -110
+#     identifier = "disclaimer"
+#     url = "/page/disclaimer/"
+# 
+# [[menu.footer]]
+#     name = "LICENSE"
+#     weight = -120
+#     identifier = "license"
+#     url = "/page/license/"
+#
