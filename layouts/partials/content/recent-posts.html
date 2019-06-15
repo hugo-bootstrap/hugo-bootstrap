@@ -3,7 +3,7 @@
             <span>Recent Posts</span>
         </div>
     </div>
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
         {{ range $paginator.Pages.ByDate.Reverse }}
             {{ partial "post/card" . }}
         {{ end }}
