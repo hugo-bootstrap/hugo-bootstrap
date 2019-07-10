@@ -1,0 +1,16 @@
+{{ partial "head" . }}
+
+<div class="container">
+    <div class="col-sm-12">
+        <div class="section-title">
+            <span>{{ .Title }}</span>
+        </div>
+    </div>
+    <div class="row">
+        {{ range .Pages }}
+            {{ partial "post/card" . }}
+        {{ end }}
+    </div>
+</div>
+
+{{ partial "foot" . }}
